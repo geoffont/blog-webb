@@ -104,8 +104,9 @@ p{
   75%{
     background-image: url(images/webbs-jupiter-images-showcase-auroras-hazes_52303461859_o.png);
   }
-
-
+  100%{
+    background-image: url(images/118428.jpg);
+  }
 }
 
 
@@ -125,6 +126,14 @@ p{
   color: white;
   padding: 1rem;
 }
+.scroller {
+  width: auto;
+  height: 250px;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+
 
 .telescope{
   padding-top: 1rem;
