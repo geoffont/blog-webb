@@ -36,6 +36,15 @@ body{
   font-size: 1.5rem;
 }
 
+.menu:hover{
+  cursor: pointer;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+
 /* section de milieu de page */
 
 #middle{
@@ -78,7 +87,30 @@ p{
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  background-image: cover;
+  background-repeat:no-repeat;
+  background-size:contain;
+  animation: animate 15s ease-in-out infinite;
 }
+
+@keyframes animate{
+  0%,100%{
+    background-image: url(images/hero-image.webp);
+  }
+  25%{
+    background-image: url(images/NGC7496_2880x1620_Lede-scaled.jpg);
+  }
+  50%{
+    background-image: url(images/STScI-01GA76KHMKEHE7TSZ7B8NWAWPF.png);
+  }
+  75%{
+    background-image: url(images/webbs-jupiter-images-showcase-auroras-hazes_52303461859_o.png);
+  }
+
+
+}
+
+
 
 /* milieu droite */
 
@@ -119,4 +151,12 @@ p{
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.liens{
+  cursor: pointer;
+}
+
+.sources{
+  cursor: pointer;
 }
