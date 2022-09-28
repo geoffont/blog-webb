@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+/* fond d'écran */
+
+body{
+  background: #3002B8;
+  background: -moz-linear-gradient(top, #3002B8 0%, #0B38AA 29%, #0295B8 100%);
+  background: -webkit-linear-gradient(top, #3002B8 0%, #0B38AA 29%, #0295B8 100%);
+  background: linear-gradient(to bottom, #3002B8 0%, #0B38AA 29%, #0295B8 100%);
+  background-repeat: no-repeat;
+}
+
+/* bar de nav */
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 5px;
+  background: rgba( 37, 15, 204, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+.nav .menu{
+  font-size: 1.5rem;
+}
+
+/* section de milieu de page */
+
+#middle{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* milieu gauche */
+
+.article-js{
+  width: 15%;
+  height: 500px;
+  border-radius: 5px;
+  background: rgba( 37, 15, 204, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  justify-content: center;
+  color: white;
+  padding: 1rem;
+}
+
+p{
+  padding-top: 1rem;
+}
+
+/* milieu de page */
+
+.carousel{
+  width: 60%;
+  height: 500px;
+  border-radius: 5px;
+  background: rgba( 37, 15, 204, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* milieu droite */
+
+.article-static{
+  width: 15%;
+  height: 500px;
+  border-radius: 5px;
+  background: rgba( 37, 15, 204, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  justify-content: center;
+  color: white;
+  padding: 1rem;
+}
+
+.telescope{
+  padding-top: 1rem;
+}
+
+/* bas de la page */
+
+#bas{
+  margin-top: 1rem;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 5px;
+  background: rgba( 37, 15, 204, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
