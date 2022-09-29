@@ -30,9 +30,13 @@ body{
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 }
-.nav .menu{
+.menu{
   font-size: 1.5rem;
 }
+li{
+  list-style: none;
+}
+
 
 .menu:hover{
   cursor: pointer;
@@ -46,7 +50,7 @@ body{
 /* section de milieu de page */
 
 #middle{
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
 }
@@ -66,9 +70,19 @@ body{
   color: white;
   padding: 1rem;
 }
+.scroller-a{
+  width: auto;
+  height: 80%;
+  overflow-y: scroll;
+  scrollbar-color: rgb(69, 4, 135) rgb(0, 117, 128);
+  scrollbar-width: thin;
+}
+
 
 p{
   padding-top: 1rem;
+  padding-bottom: 1rem;
+
 }
 
 /* milieu de page */
@@ -88,7 +102,7 @@ p{
   background-image: cover;
   background-repeat:no-repeat;
   background-size:contain;
-  animation: animate 30s ease-in-out infinite;
+  animation: animate 30s ease infinite;
 }
 
 @keyframes animate{
@@ -105,7 +119,7 @@ p{
     background-image: url(images/webbs-jupiter-images-showcase-auroras-hazes_52303461859_o.png);
   }
   100%{
-    background-image: url(images/118428.jpg);
+    background-image: url(images/main_image_star-forming_region_carina_nircam_final-5mb.jpeg);
   }
 }
 
@@ -126,23 +140,24 @@ p{
   color: white;
   padding: 1rem;
 }
-.scroller {
+.scroller-b{
   width: auto;
   height: 250px;
   overflow-y: scroll;
-  scrollbar-color: rebeccapurple green;
+  scrollbar-color: rgb(69, 4, 135) rgb(0, 117, 128);
   scrollbar-width: thin;
 }
 
 
 .telescope{
   padding-top: 1rem;
+  width:100%;
 }
 
 /* bas de la page */
 
 #bas{
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .footer{
