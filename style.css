@@ -19,13 +19,14 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
   height: 3rem;
   padding: 1rem;
   color: white;
   border-radius: 5px;
   background: rgba( 37, 15, 204, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
+  backdrop-filter: blur( 2px );
   -webkit-backdrop-filter: blur( 4px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 
@@ -35,11 +36,11 @@ body{
   display: flex;
   justify-content: start;
   align-items: center;
+  width: 4.2rem;
 }
 
 li{
   list-style: none;
-  
 }
 .sous-menu{
   display: none;
@@ -51,14 +52,7 @@ li{
 .menu:hover .sous-menu{
   cursor: pointer;
   display: inline-block;
-  transform: translateX(90px);
-  margin-right: -5.2rem;
-  
-}
-
-.base-menu{
-  position: absolute;
-  top: 20px;
+  transform: translateX(0.5rem);
 }
 
 .logo:hover{
@@ -81,7 +75,7 @@ li{
   border-radius: 5px;
   background: rgba( 37, 15, 204, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
+  backdrop-filter: blur( 2px );
   -webkit-backdrop-filter: blur( 4px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   justify-content: center;
@@ -96,11 +90,9 @@ li{
   scrollbar-width: thin;
 }
 
-
 p{
   padding-top: 1rem;
   padding-bottom: 1rem;
-
 }
 
 /* milieu de page */
@@ -111,7 +103,7 @@ p{
   border-radius: 5px;
   background: rgba( 37, 15, 204, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
+  backdrop-filter: blur( 1px );
   -webkit-backdrop-filter: blur( 4px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   display: flex;
@@ -141,8 +133,6 @@ p{
   }
 }
 
-
-
 /* milieu droite */
 
 .article-static{
@@ -151,7 +141,7 @@ p{
   border-radius: 5px;
   background: rgba( 37, 15, 204, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
+  backdrop-filter: blur( 2px );
   -webkit-backdrop-filter: blur( 4px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   justify-content: center;
@@ -165,7 +155,6 @@ p{
   scrollbar-color: rgb(69, 4, 135) rgb(0, 117, 128);
   scrollbar-width: thin;
 }
-
 
 .telescope{
   padding-top: 1rem;
@@ -188,15 +177,19 @@ p{
   border-radius: 5px;
   background: rgba( 37, 15, 204, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
+  backdrop-filter: blur( 2px );
   -webkit-backdrop-filter: blur( 4px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .liens{
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .sources{
   cursor: pointer;
+  font-size: 1.5rem;
 }
+
+
