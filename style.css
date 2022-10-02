@@ -5,6 +5,15 @@
   font-family: 'Kanit', sans-serif;
 }
 
+:root{
+  --color-back:rgba( 37, 15, 204, 0.1 );
+  --color-shadow:rgba( 31, 38, 135, 0.37 );
+  --color-border:rgba( 255, 255, 255, 0.18 );
+}
+
+
+
+
 /* fond d'écran */
 
 body{
@@ -24,11 +33,11 @@ body{
   padding: 1rem;
   color: white;
   border-radius: 5px;
-  background: rgba( 37, 15, 204, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background: var(--color-back);
+  box-shadow: 0 8px 32px 0 var(--color-shadow);
   backdrop-filter: blur( 2px );
   -webkit-backdrop-filter: blur( 4px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid var(--color-border);
 
 }
 .menu{
@@ -73,11 +82,11 @@ li{
   width: 15%;
   height: 31.25rem;
   border-radius: 5px;
-  background: rgba( 37, 15, 204, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background: var(--color-back);
+  box-shadow: 0 8px 32px 0 var(--color-shadow);
   backdrop-filter: blur( 2px );
   -webkit-backdrop-filter: blur( 4px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid var(--color-border);
   justify-content: center;
   color: white;
   padding: 1rem;
@@ -101,11 +110,11 @@ p{
   width: 60%;
   height: 31.25rem;
   border-radius: 5px;
-  background: rgba( 37, 15, 204, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background:var(--color-back);
+  box-shadow: 0 8px 32px 0 var(--color-shadow);
   backdrop-filter: blur( 1px );
   -webkit-backdrop-filter: blur( 4px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid var(--color-border);
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -139,11 +148,11 @@ p{
   width: 15%;
   height: 31.25rem;
   border-radius: 5px;
-  background: rgba( 37, 15, 204, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background: var(--color-back);
+  box-shadow: 0 8px 32px 0 var(--color-shadow);
   backdrop-filter: blur( 2px );
   -webkit-backdrop-filter: blur( 4px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid var(--color-border);
   justify-content: center;
   color: white;
   padding: 1rem;
@@ -175,11 +184,11 @@ p{
   padding: 1.5rem;
   color: white;
   border-radius: 5px;
-  background: rgba( 37, 15, 204, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background: var(--color-back);
+  box-shadow: 0 8px 32px 0 var(--color-shadow);
   backdrop-filter: blur( 2px );
   -webkit-backdrop-filter: blur( 4px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid var(--color-border);
 }
 
 .liens{
