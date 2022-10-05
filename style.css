@@ -41,7 +41,6 @@ h2{
   z-index: 2;
 }
 
-
 .nav{
   display: flex;
   justify-content: space-between;
@@ -159,9 +158,7 @@ p{
   background-image: cover;
   background-repeat:no-repeat;
   background-size:contain;
-  
 }
-
 
 
 /* ----------------------------milieu droite ------------------------------*/
@@ -313,4 +310,136 @@ p{
   border-style: none;
   padding-right: 3rem;
   height: var(--height-logo);
+}
+
+/*------------------------------media query----------------------------------*/
+
+@media screen and (max-width: 600px) {
+    #middle{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    .article-static{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    .telescope{
+      width: auto;
+      height: 20rem;
+    }
+
+    .carousel{
+      width: 100%;
+      height: 21rem;
+    }
+
+    .article-js{
+      width: 100%;
+      height: 20rem;
+      padding: 0.5rem;
+    }
+
+    #galerie{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 30rem;
+    }
+
+    .gal-a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8rem;
+    }
+
+    .orion p{
+      padding: 1.5rem;
+    }
+
+    .chariot{
+      padding-top: 2rem;
+    }
+
+    .chariot p{
+      padding: 1.5rem;
+    }
+    .gal-b{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 43rem;
+    }
+    .galm74 p{
+      padding: 0.5rem 8rem 0.5rem 8rem;
+    }
+
+    .gal-c{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 45rem;
+    }
+
+    .austral p {
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    .jup{
+      padding-top: 3rem;
+    }
+    .jup p{
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    .gal-d{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 45rem;
+    }
+
+    .globule p{
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    }
+    .quinte{
+      padding-top: 3rem;
+    }
+    
+    .quinte p{
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    .gal-e{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 43rem;
+    }
+
+    .carene p{
+      padding: 0.5rem 12rem 0.5rem 12rem;
+    }
+
+    .gal-f{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 47rem;
+    }
+
+    .tarentule p{
+      padding: 0.5rem 12rem 0.5rem 12rem;
+    }
+
 }
