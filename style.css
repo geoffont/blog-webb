@@ -8,16 +8,15 @@
 
 :root{
   --color-back:rgba( 37, 15, 204, 0.1 );
-  --color-shadow:rgba( 31, 38, 135, 0.37 );
-  --color-border:rgba( 255, 255, 255, 0.18 );
+  --box-shadow:0 8px 32px 0 gba( 31, 38, 135, 0.37 );
+  --border:1px solid rgba( 255, 255, 255, 0.18 );
   --blur:blur(2px);
   --color-scroll:rgb(69, 4, 135) rgb(0, 117, 128);
+  --height-logo:3rem
 }
 img{
-  box-shadow: 0 8px 32px 0 var(--color-shadow);
-  backdrop-filter: blur( 2px );
-  -webkit-backdrop-filter: blur( 4px );
-  border: 1px solid var(--color-border);
+  box-shadow: var(--box-shadow);
+  border: var(--border);
 }
 
 
@@ -51,10 +50,10 @@ h2{
   padding: 1rem;
   border-radius: 5px;
   background: var(--color-back);
-  box-shadow: 0 8px 32px 0 var(--color-shadow);
+  box-shadow: var(--box-shadow);
   backdrop-filter: var(--blur);
   -webkit-backdrop-filter: var(--blur);
-  border: 1px solid var(--color-border);
+  border: var(--border);
 }
 
 .menu{
@@ -67,7 +66,6 @@ h2{
 
 ul li {
   list-style: none;
-  
 }
 
 a{
@@ -87,8 +85,10 @@ a{
   transform: translateX(0.5rem);
 }
 
+
 .logo img{
   border-style: none;
+  height: var(--height-logo);
 }
 .logo:hover{
   cursor: pointer;
@@ -120,10 +120,10 @@ h1{
   height: 31.25rem;
   border-radius: 5px;
   background: var(--color-back);
-  box-shadow: 0 8px 32px 0 var(--color-shadow);
+  box-shadow: var(--box-shadow);
   backdrop-filter: var(--blur);
   -webkit-backdrop-filter: var(--blur);
-  border: 1px solid var(--color-border);
+  border: var(--border);
   justify-content: center;
   padding: 1rem;
 }
@@ -147,10 +147,10 @@ p{
   height: 31.25rem;
   border-radius: 5px;
   background:var(--color-back);
-  box-shadow: 0 8px 32px 0 var(--color-shadow);
+  box-shadow: var(--box-shadow);
   backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var();
-  border: 1px solid var(--color-border);
+  -webkit-backdrop-filter: var(--blur);
+  border: var(--border);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,10 +171,10 @@ p{
   height: 31.25rem;
   border-radius: 5px;
   background: var(--color-back);
-  box-shadow: 0 8px 32px 0 var(--color-shadow);
+  box-shadow: var(--box-shadow);
   backdrop-filter: var(--blur);
   -webkit-backdrop-filter: var(--blur);
-  border: 1px solid var(--color-border);
+  border: var(--border);
   justify-content: center;
   padding: 1rem;
 }
@@ -285,10 +285,10 @@ p{
   padding: 1.5rem;
   border-radius: 5px;
   background: var(--color-back);
-  box-shadow: 0 8px 32px 0 var(--color-shadow);
+  box-shadow: var(--box-shadow);
   backdrop-filter: var(--blur);
   -webkit-backdrop-filter: var(--blur);
-  border: 1px solid var(--color-border);
+  border: var(--border);
   margin-top: 15rem;
 }
 
@@ -299,5 +299,6 @@ p{
 
 .liens img{
   border-style: none;
-  padding: 3rem;
+  padding-right: 3rem;
+  height: var(--height-logo);
 }
