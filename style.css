@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Kanit', sans-serif;
-  
+  color: white;
 }
 
 :root{
@@ -18,9 +18,10 @@
 /* fond d'écran */
 
 body{
+  background-attachment: scroll;
   background: url(images/espace.jpg);
   background-position: 100%;
-  height: 3000px;
+  height: auto;
 }
 
 
@@ -29,6 +30,7 @@ body{
 #header{
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 
@@ -37,10 +39,10 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
+  
   height: 3rem;
   padding: 1rem;
-  color: white;
+
   border-radius: 5px;
   background: var(--color-back);
   box-shadow: 0 8px 32px 0 var(--color-shadow);
@@ -57,9 +59,15 @@ body{
   width: 4.2rem;
 }
 
-li{
+ul li {
   list-style: none;
+  
 }
+
+a{
+  text-decoration: none;
+}
+
 .sous-menu{
   display: none;
 }
@@ -73,14 +81,21 @@ li{
   transform: translateX(0.5rem);
 }
 
+.logo img{
+  border-style: none;
+}
 .logo:hover{
   cursor: pointer;
 }
 
+/*---titre---*/
+
 .titre{
-  color: white;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
+}
+h1{
+  font-size: 2.5rem;
 }
 
 
@@ -104,7 +119,6 @@ li{
   -webkit-backdrop-filter: blur( 4px );
   border: 1px solid var(--color-border);
   justify-content: center;
-  color: white;
   padding: 1rem;
 }
 .scroller-a{
@@ -135,7 +149,7 @@ p{
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  background-image: url(images/jupiter.png);
+  background-image: url(images/nebuleuse\ de\ la\ carene.jpg);
   background-image: cover;
   background-repeat:no-repeat;
   background-size:contain;
@@ -156,7 +170,6 @@ p{
   -webkit-backdrop-filter: blur( 4px );
   border: 1px solid var(--color-border);
   justify-content: center;
-  color: white;
   padding: 1rem;
 }
 .scroller-b{
@@ -179,8 +192,20 @@ p{
   height: 31.25rem;
   display: flex;
   justify-content: space-around;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  
 }
+
+
+img{
+  box-shadow: 0 8px 32px 0 var(--color-shadow);
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid var(--color-border);
+}
+
+
+
 
 .gal-b{
   width: 100%;
@@ -220,11 +245,10 @@ p{
 
 .footer{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 3rem;
   padding: 1.5rem;
-  color: white;
   border-radius: 5px;
   background: var(--color-back);
   box-shadow: 0 8px 32px 0 var(--color-shadow);
@@ -235,7 +259,12 @@ p{
 
 .liens{
   cursor: pointer;
-  font-size: 1.5rem;
+  
+}
+
+.liens img{
+  border-style: none;
+  padding: 3rem;
 }
 
 .sources{
