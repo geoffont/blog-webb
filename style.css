@@ -85,7 +85,6 @@ a{
   transform: translateX(0.5rem);
 }
 
-
 .logo img{
   border-style: none;
   height: var(--height-logo);
@@ -160,7 +159,6 @@ p{
   background-image: url(images/nebuleuse\ de\ la\ carene.jpg);
   background-image: cover;
   background-repeat:no-repeat;
-  background-size:contain;
 }
 
 
@@ -187,7 +185,6 @@ p{
 }
 
 .telescope{
-  padding-top: 1rem;
   width:100%;
 }
 
@@ -331,11 +328,15 @@ p{
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding: 0rem;
+    }
+    .article-static p{
       padding: 0.5rem;
     }
     .telescope{
       width: auto;
       height: 20rem;
+      padding: 0;
     }
 
     .carousel{
