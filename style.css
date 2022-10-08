@@ -62,6 +62,9 @@ h2{
   align-items: center;
   width: 4.2rem;
 }
+.base-menu:hover{
+  transform: rotate(30deg);
+}
 
 ul li {
   list-style: none;
@@ -153,7 +156,7 @@ p{
   -webkit-backdrop-filter: var(--blur);
   border: var(--border);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
   background-image: url(images/nebuleuse\ de\ la\ carene.jpg);
@@ -161,6 +164,16 @@ p{
   background-repeat:no-repeat;
 }
 
+
+button{
+  cursor: pointer;
+  height: 5rem;
+  width: 3rem;
+  font-size: 3rem;
+  background:var(--color-back);
+  border: var(--border);
+  border-radius: 5px;
+}
 
 /* ----------------------------milieu droite ------------------------------*/
 
