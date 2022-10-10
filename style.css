@@ -132,12 +132,25 @@ h1{
   padding: 1rem;
 }
 .scroller-a{
-  width: auto;
   height: 80%;
   overflow-y: scroll;
   scrollbar-color: var(--color-scroll);
-  scrollbar-width: thin;
+  
 }
+  .scroller-a::-webkit-scrollbar{
+  width: 10px;
+}
+
+  .scoller-a::-webkit-scrollbar-track {
+    background: #630486;
+  }
+
+  .scoller-a::-webkit-scrollbar-thumb {
+    background-color: #3b2183;
+    border-radius: 8px;
+    border: 1px none #0a0118;
+  }
+
 
 p{
   padding-top: 1rem;
@@ -159,11 +172,22 @@ p{
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
-  background-image: url(images/nebuleuse\ de\ la\ carene.jpg);
-  background-image: cover;
-  background-repeat:no-repeat;
 }
 
+.carousel img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.carousel img active{
+  opacity: 1;
+}
 
 button{
   cursor: pointer;
@@ -173,6 +197,9 @@ button{
   background:var(--color-back);
   border: var(--border);
   border-radius: 5px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* ----------------------------milieu droite ------------------------------*/
@@ -197,6 +224,20 @@ button{
   scrollbar-width: thin;
 }
 
+
+  .scroller-b::-webkit-scrollbar{
+  width: 10px;
+}
+
+  .scoller-b::-webkit-scrollbar-track {
+    background: #630486;
+  }
+
+  .scoller-b::-webkit-scrollbar-thumb {
+    background-color: #3b2183;
+    border-radius: 8px;
+    border: 1px none #0a0118;
+  }
 .telescope{
   width:100%;
 }
