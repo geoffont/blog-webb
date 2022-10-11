@@ -157,24 +157,16 @@ p{
   padding-bottom: 1rem;
 }
 
-/*--------------------------- milieu de page-------------------------- */
+/*--------------------------- milieu de page slider-------------------------- */
 
-.carousel{
-  width: 60%;
-  height: 31.25rem;
-  border-radius: 5px;
-  background:var(--color-back);
-  box-shadow: var(--box-shadow);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
-  border: var(--border);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
+
+.slider {
+  width: 110vh;
+  height: 70vh;
+  position: relative;
 }
 
-.carousel img{
+.slider img {
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -185,21 +177,25 @@ p{
   transition: opacity .5s;
 }
 
-.carousel img active{
+.slider img.active {
   opacity: 1;
 }
 
-button{
-  cursor: pointer;
-  height: 5rem;
-  width: 3rem;
+.suivant, .precedent {
+  color: #fff;
   font-size: 3rem;
-  background:var(--color-back);
-  border: var(--border);
-  border-radius: 5px;
-  position: relative;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.suivant {
+  right: 0.1rem;
+}
+
+.precedent {
+  left: 0.1rem;
 }
 
 /* ----------------------------milieu droite ------------------------------*/
