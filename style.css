@@ -108,7 +108,6 @@ h1{
   letter-spacing: 2px;
 }
 
-
 /*------------------------ section de milieu de page--------------------- */
 
 #middle{
@@ -117,65 +116,54 @@ h1{
   justify-content: space-between;
 }
 
-/* -------------------------------milieu gauche ---------------------------*/
+/*--------------------------- milieu de page slider-------------------------- */
 
-.article-js{
-  width: 15%;
-  height: 31.25rem;
-  border-radius: 5px;
-  background: var(--color-back);
-  box-shadow: var(--box-shadow);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
-  border: var(--border);
-  justify-content: center;
-  padding: 1rem;
-}
-.scroller-a{
-  width: auto;
-  height: 80%;
-  overflow-y: scroll;
-  scrollbar-color: var(--color-scroll);
-  scrollbar-width: thin;
+.slider {
+  width: 110vh;
+  height: 70vh;
+  position: relative;
 }
 
-p{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.slider img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
 }
 
-/*--------------------------- milieu de page-------------------------- */
-
-.carousel{
-  width: 60%;
-  height: 31.25rem;
-  border-radius: 5px;
-  background:var(--color-back);
-  box-shadow: var(--box-shadow);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
-  border: var(--border);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
-  background-image: url(images/nebuleuse\ de\ la\ carene.jpg);
-  background-image: cover;
-  background-repeat:no-repeat;
+.slider img.active {
+  opacity: 1;
 }
 
-
-button{
-  cursor: pointer;
-  height: 5rem;
-  width: 3rem;
+.suivant, .precedent {
+  color: #fff;
   font-size: 3rem;
-  background:var(--color-back);
-  border: var(--border);
-  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.3;
 }
 
-/* ----------------------------milieu droite ------------------------------*/
+.precedent:hover{
+  opacity: 1;
+}
+.suivant:hover{
+  opacity: 1;
+}
+.suivant {
+  right: 0.1rem;
+}
+
+.precedent {
+  left: 0.1rem;
+}
+
+/* ---------------------------- articles du milieu ------------------------------*/
 
 .article-static{
   width: 15%;
@@ -189,16 +177,32 @@ button{
   justify-content: center;
   padding: 1rem;
 }
+
 .scroller-b{
   width: auto;
-  height: 15.625rem;
+  height: 17rem;
   overflow-y: scroll;
   scrollbar-color: var(--color-scroll);
   scrollbar-width: thin;
 }
 
+  .scroller-b::-webkit-scrollbar{
+  width: 10px;
+}
+
+  .scoller-b::-webkit-scrollbar-track {
+    background: #630486;
+  }
+
+  .scoller-b::-webkit-scrollbar-thumb {
+    background-color: #3b2183;
+    border-radius: 8px;
+    border: 1px none #0a0118;
+  }
+
 .telescope{
   width:100%;
+  margin-top: 1.5rem;
 }
 
 /*-------------------galerie---------------------*/
@@ -341,28 +345,27 @@ button{
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       padding: 0rem;
+      margin-top: 3rem;
     }
     .article-static p{
       padding: 0.5rem;
     }
+    
     .telescope{
       width: auto;
       height: 20rem;
       padding: 0;
     }
 
-    .carousel{
+    .slider{
       width: 100%;
       height: 21rem;
+      margin-top: 5rem;
     }
 
-    .article-js{
-      width: 100%;
-      height: 20rem;
-      padding: 0.5rem;
-    }
-
+   
     #galerie{
       display: flex;
       flex-direction: column;
