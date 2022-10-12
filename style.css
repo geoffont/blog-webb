@@ -163,7 +163,7 @@ h1{
   left: 0.1rem;
 }
 
-/* ----------------------------article du milieu ------------------------------*/
+/* ---------------------------- articles du milieu ------------------------------*/
 
 .article-static{
   width: 15%;
@@ -177,9 +177,10 @@ h1{
   justify-content: center;
   padding: 1rem;
 }
+
 .scroller-b{
   width: auto;
-  height: 15.625rem;
+  height: 17rem;
   overflow-y: scroll;
   scrollbar-color: var(--color-scroll);
   scrollbar-width: thin;
@@ -198,8 +199,10 @@ h1{
     border-radius: 8px;
     border: 1px none #0a0118;
   }
+
 .telescope{
   width:100%;
+  margin-top: 1.5rem;
 }
 
 /*-------------------galerie---------------------*/
@@ -343,27 +346,25 @@ h1{
       flex-direction: column;
       justify-content: center;
       padding: 0rem;
+      margin-top: 3rem;
     }
     .article-static p{
       padding: 0.5rem;
     }
+    
     .telescope{
       width: auto;
       height: 20rem;
       padding: 0;
     }
 
-    .carousel{
+    .slider{
       width: 100%;
       height: 21rem;
+      margin-top: 5rem;
     }
 
-    .article-js{
-      width: 100%;
-      height: 20rem;
-      padding: 0.5rem;
-    }
-
+   
     #galerie{
       display: flex;
       flex-direction: column;
