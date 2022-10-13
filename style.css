@@ -62,6 +62,10 @@ h2{
   align-items: center;
   width: 4.2rem;
 }
+
+.base-menu{
+  font-size: 3rem;
+}
 .base-menu:hover{
   transform: rotate(30deg);
 }
@@ -178,23 +182,21 @@ h1{
   padding: 1rem;
 }
 
-.scroller-b{
+.scroller{
   width: auto;
   height: 17rem;
   overflow-y: scroll;
-  scrollbar-color: var(--color-scroll);
-  scrollbar-width: thin;
 }
 
-  .scroller-b::-webkit-scrollbar{
+  ::-webkit-scrollbar{
   width: 10px;
 }
 
-  .scoller-b::-webkit-scrollbar-track {
+  ::-webkit-scrollbar-track {
     background: #630486;
   }
 
-  .scoller-b::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     background-color: #3b2183;
     border-radius: 8px;
     border: 1px none #0a0118;
@@ -299,6 +301,54 @@ h1{
   text-align: center;
   width: 55rem;
 }
+
+/* -----------------------formulaire------------------- */
+
+#formulaire{
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'kanit', sans-serif;
+  
+}
+.inpuText{
+  width: 40rem;
+  height: 2rem;
+  border-radius: 5px;
+  background: var(--color-back);
+  box-shadow: var(--box-shadow);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border: var(--border);
+  font-size: 1rem;
+}
+.aeraText{
+  margin-top: 2rem;
+  width: 40rem;
+  height: 10rem;
+  border-radius: 5px;
+  background: var(--color-back);
+  box-shadow: var(--box-shadow);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border: var(--border);
+  font-size: 1rem;
+}
+.formButton{
+  width: 10rem;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  background: var(--color-back);
+  box-shadow: var(--box-shadow);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border: var(--border);
+  font-size: 1rem;
+}
+
 
 /* ------------------bas de la page --------------------*/
 

@@ -31,3 +31,12 @@ precedent.addEventListener('click', function() {
     img__slider[etape].classList.add('active');
 })
 
+const message =
+  "Merci pour votre retour!";
+
+document
+  .getElementById("formulaire")
+  .addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert(message);
+  });
