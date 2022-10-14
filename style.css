@@ -1070,6 +1070,9 @@ h1 {
 	transform: scale(1.3);
 }
 
+#bas p {
+	font-size: x-small;
+}
 /*------------------------------media query----------------------------------*/
 
 @media screen and (max-width: 600px) {
@@ -1092,7 +1095,7 @@ h1 {
 	}
 
 	.telescope {
-		width: auto;
+		width: 30rem;
 		height: 20rem;
 		padding: 0;
 	}
@@ -1100,14 +1103,18 @@ h1 {
 	.slider {
 		width: 100%;
 		height: 21rem;
-		margin-top: 5rem;
+		margin-top: 3rem;
 	}
 
 	#galerie {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-top: 30rem;
+		padding-top: 25rem;
+	}
+
+	#galerie img{
+		width: 30rem;
 	}
 
 	.gal-a {
@@ -1134,7 +1141,7 @@ h1 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 43rem;
+		margin-top: 35rem;
 	}
 	.galm74 p {
 		padding: 0.5rem 8rem 0.5rem 8rem;
@@ -1145,7 +1152,7 @@ h1 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 45rem;
+		margin-top: 38rem;
 	}
 
 	.austral p {
@@ -1164,7 +1171,7 @@ h1 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 45rem;
+		margin-top: 38rem;
 	}
 
 	.globule p {
@@ -1183,11 +1190,14 @@ h1 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 43rem;
+		margin-top: 33rem;
 	}
 
 	.carene p {
 		padding: 0.5rem 12rem 0.5rem 12rem;
+	}
+	.carene img{
+		width: 30rem;
 	}
 
 	.gal-f {
@@ -1195,7 +1205,7 @@ h1 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 47rem;
+		margin-top: 38rem;
 	}
 
 	.tarentule p {
@@ -1203,7 +1213,7 @@ h1 {
 	}
 
   #formulaire{
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   
   .inpuText{
