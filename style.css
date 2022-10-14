@@ -85,7 +85,7 @@ a {
 }
 .menu:hover {
 	cursor: pointer;
-	transform: scale(1.1);
+	font-size: 1.1rem;
 }
 
 .menu:hover .sous-menu {
@@ -987,24 +987,24 @@ h1 {
 	margin-top: 22.5rem;
 	margin-left: 45rem;
 }
-#info_jupiter {
+#info_ceinture_asteroides {
 	margin-top: 30rem;
 	margin-left: 45rem;
 }
 #info_saturne {
-	margin-top: 30rem;
+	margin-top: 7.5rem;
 }
 #info_uranus {
-	margin-top: 22.5rem;
+	margin-top: 15rem;
 }
 #info_neptune {
-	margin-top: 15rem;
+	margin-top: 22.5rem;
 }
 #info_soleil {
 	margin-left: 24rem;
 }
 #info_lune {
-	margin-top: 7.5rem;
+	margin-top: 30rem;
 }
 
 
@@ -1081,6 +1081,11 @@ h1 {
 		flex-direction: column-reverse;
 		justify-content: center;
 	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	
 	.article-static {
 		width: 100%;
 		display: flex;
@@ -1123,17 +1128,20 @@ h1 {
 		justify-content: center;
 		align-items: center;
 		margin-top: 8rem;
+		width: 30rem;
 	}
 
-	.orion p {
-		padding: 1.5rem;
+	.orion{
+		width: 30rem;
 	}
+
+	
 
 	.chariot {
 		padding-top: 2rem;
 	}
 
-	.chariot p {
+	p {
 		padding: 1.5rem;
 	}
 	.gal-b {
@@ -1142,17 +1150,22 @@ h1 {
 		justify-content: center;
 		align-items: center;
 		margin-top: 35rem;
+		padding: 0;
+		width: 30rem;
 	}
-	.galm74 p {
-		padding: 0.5rem 8rem 0.5rem 8rem;
+	.galm74{
+		width: 30rem;
+		margin-top: 2rem;
 	}
+	
 
 	.gal-c {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 38rem;
+		margin-top: 40rem;
+		width: 30rem;
 	}
 
 	.austral p {
@@ -1172,6 +1185,7 @@ h1 {
 		justify-content: center;
 		align-items: center;
 		margin-top: 38rem;
+		width: 30rem;
 	}
 
 	.globule p {
@@ -1191,12 +1205,11 @@ h1 {
 		justify-content: center;
 		align-items: center;
 		margin-top: 33rem;
+		width: 30rem;
 	}
 
-	.carene p {
-		padding: 0.5rem 12rem 0.5rem 12rem;
-	}
-	.carene img{
+	
+	.carene{
 		width: 30rem;
 	}
 
@@ -1206,11 +1219,13 @@ h1 {
 		justify-content: center;
 		align-items: center;
 		margin-top: 38rem;
+		width: 30rem;
 	}
 
-	.tarentule p {
-		padding: 0.5rem 12rem 0.5rem 12rem;
+	.tarentule{
+		width: 30rem;
 	}
+	
 
   #formulaire{
     margin-top: 5rem;
