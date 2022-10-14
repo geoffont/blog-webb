@@ -973,43 +973,40 @@ h1 {
 
 /* ---------------Info Planètes------------- */
 #info_mercure {
-	margin-top: 2rem;
 	margin-left: 45rem;
 }
 #info_venus {
-	margin-top: 5rem;
+	margin-top: 7.5rem;
 	margin-left: 45rem;
 }
 #info_terre {
-	margin-top: 8rem;
+	margin-top: 15rem;
 	margin-left: 45rem;
 }
 #info_mars {
-	margin-top: 11rem;
+	margin-top: 22.5rem;
 	margin-left: 45rem;
 }
 #info_jupiter {
-	margin-top: 14rem;
+	margin-top: 30rem;
 	margin-left: 45rem;
 }
 #info_saturne {
-	margin-top: 14rem;
+	margin-top: 30rem;
 }
 #info_uranus {
-	margin-top: 11rem;
+	margin-top: 22.5rem;
 }
 #info_neptune {
-	margin-top: 8rem;
+	margin-top: 15rem;
 }
 #info_soleil {
 	margin-left: 24rem;
 }
 #info_lune {
-	margin-top: 5rem;
+	margin-top: 7.5rem;
 }
-#info_ceinture_asteroides {
-	margin-top: 2rem;
-}
+
 
 /* -------------Info Planètes et astres hover--------*/
 #info_mercure:hover ~ #mercure.orbite,
@@ -1050,6 +1047,13 @@ h1 {
 	-webkit-backdrop-filter: var(--blur);
 	border: var(--border);
 	margin-top: 5rem;
+}
+.logoInsta{
+	scale: 1.3;
+}
+
+.logoFacebook{
+	scale: 1.1;
 }
 
 .liens {
