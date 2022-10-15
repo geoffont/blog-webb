@@ -360,6 +360,7 @@ h1 {
 	width: 50rem;
 	height: 37rem;
 	margin-top: 5rem;
+	display: none;
 }
 
 .orbite {
