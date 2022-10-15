@@ -36,16 +36,30 @@ const message =
 
   let systeme_solaire = document.getElementById("systeme_solaire");
 
-
+  
 
 document
   .getElementById("formulaire")
   .addEventListener("submit", function(event) {
+    
     event.preventDefault();
+    
     alert(message);
+    
 if(getComputedStyle(systeme_solaire).display != "none"){
     systeme_solaire.style.display = "none";
-  } else {
+  }
+  
+  if (window.innerWidth < 600) {
+    $("systeme_solaire").hide(systeme_solaire);
+}
+  
+
+  else {
     systeme_solaire.style.display = "block";
   }
+
   });
+
+
+  
