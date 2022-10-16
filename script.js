@@ -32,19 +32,19 @@ precedent.addEventListener('click', function() {
 })
 
 const message =
-  "Merci pour votre retour!";
+  "Merci pour votre retour! voici un petit cadeaux en mode display ;)";
 
   let systeme_solaire = document.getElementById("systeme_solaire");
-
+  
   
 
 document
   .getElementById("formulaire")
   .addEventListener("submit", function(event) {
-    
+    let inpuText = document.querySelector(".inpuText").value;
     event.preventDefault();
     
-    alert(message);
+    alert(inpuText + " " + message);
     
 if(getComputedStyle(systeme_solaire).display != "none"){
     systeme_solaire.style.display = "none";
@@ -54,7 +54,6 @@ if(getComputedStyle(systeme_solaire).display != "none"){
     $("systeme_solaire").hide(systeme_solaire);
 }
   
-
   else {
     systeme_solaire.style.display = "block";
   }

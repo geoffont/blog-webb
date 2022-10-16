@@ -1232,6 +1232,11 @@ h1 {
     width: 30rem;
   }
 	
+	#script_solaire{
+		display: none;
+		
+	}
+
 }
 
 
