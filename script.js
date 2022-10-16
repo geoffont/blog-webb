@@ -1,3 +1,5 @@
+/*--------------fonction slide-----------*/
+
 let img__slider = document.getElementsByClassName("img__slider");
 
 let etape = 0;
@@ -30,7 +32,7 @@ precedent.addEventListener("click", function () {
 	enleverActiveImages();
 	img__slider[etape].classList.add("active");
 });
-
+/*------------------fonction formulaire------*/
 const message =
 	"Merci pour votre retour! voici un petit cadeaux en mode display ;)";
 
@@ -54,33 +56,10 @@ document
 			systeme_solaire.style.display = "block";
 		}
 	});
-
+/*-----------------fonction scroll---------------*/
 window.addEventListener("scroll", function () {
 	const distance = window.scrollY;
-	document.querySelector(".gal-a").style.transform = `translateY(${
-		distance * -0.1
+	document.querySelector("body").style.transform = `translateY(${
+		distance * -0.5
 	}px)`;
-	document.querySelector(".gal-b").style.transform = `translateY(${
-		distance * -0.1
-	}px)`;
-	document.querySelector(".gal-c").style.transform = `translateY(${
-		distance * -0.1
-	}px)`;
-	document.querySelector(".gal-d").style.transform = `translateY(${
-		distance * -0.1
-	}px)`;
-	document.querySelector(".gal-e").style.transform = `translateY(${
-		distance * -0.1
-	}px)`;
-	document.querySelector(".gal-f").style.transform = `translateY(${
-		distance * -0.1
-	}px)`;
-	document.querySelector("#formulaire").style.transform = `translateY(${
-		distance * -0.1
-	}px)`;
-	document.querySelector("#script_solaire").style.transform = `translateY(${
-		distance * -0.1
-	}px)`;
-  
-  
 });

@@ -25,7 +25,7 @@ img {
 body {
 	background: url(images/espace.jpg);
 	background-position: 100%;
-	height: auto;
+	height: 4000px;
 }
 
 h2 {
@@ -66,10 +66,10 @@ h2 {
 	font-size: 3rem;
 }
 
-.base-menu img{
-  margin-top: 1rem;
-  height: var(--height-logo);
-  border-style: none;
+.base-menu img {
+	margin-top: 1rem;
+	height: var(--height-logo);
+	border-style: none;
 }
 
 ul li {
@@ -349,9 +349,9 @@ h1 {
 	font-size: 1rem;
 }
 
-.formButton:hover{
-  cursor: pointer;
-  scale: 1.1;
+.formButton:hover {
+	cursor: pointer;
+	scale: 1.1;
 }
 
 /*-------------------syteme solaire---------------*/
@@ -1008,7 +1008,6 @@ h1 {
 	margin-top: 30rem;
 }
 
-
 /* -------------Info Planètes et astres hover--------*/
 #info_mercure:hover ~ #mercure.orbite,
 #info_venus:hover ~ #venus.orbite,
@@ -1047,11 +1046,11 @@ h1 {
 	border: var(--border);
 	margin-top: 5rem;
 }
-.logoInsta{
+.logoInsta {
 	scale: 1.3;
 }
 
-.logoFacebook{
+.logoFacebook {
 	scale: 1.1;
 }
 
@@ -1080,11 +1079,11 @@ h1 {
 		flex-direction: column-reverse;
 		justify-content: center;
 	}
-	*{
+	* {
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	.article-static {
 		width: 100%;
 		display: flex;
@@ -1105,10 +1104,10 @@ h1 {
 	}
 
 	.slider {
-		width: 100%;	
+		width: 100%;
 		margin-top: 3rem;
 	}
-
+	/*----------------galerie----------------*/
 	#galerie {
 		display: flex;
 		flex-direction: column;
@@ -1117,7 +1116,7 @@ h1 {
 		padding-top: 25rem;
 	}
 
-	#galerie img{
+	#galerie img {
 		width: 30rem;
 	}
 
@@ -1126,11 +1125,11 @@ h1 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 18rem;
+		margin-top: 5rem;
 		width: 30rem;
 	}
 
-	.orion{
+	.orion {
 		width: 30rem;
 	}
 
@@ -1146,21 +1145,21 @@ h1 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 35rem;
+		margin-top: 30rem;
 		padding: 0;
 		width: 30rem;
 	}
-	.galm74{
+	.galm74 {
 		width: 30rem;
 		margin-top: 2rem;
 	}
-	
+
 	.gal-c {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 40rem;
+		margin-top: 35rem;
 		width: 30rem;
 	}
 
@@ -1180,7 +1179,7 @@ h1 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 38rem;
+		margin-top: 32rem;
 		width: 30rem;
 	}
 
@@ -1200,11 +1199,11 @@ h1 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 33rem;
+		margin-top: 30rem;
 		width: 30rem;
 	}
 
-	.carene{
+	.carene {
 		width: 30rem;
 	}
 
@@ -1213,31 +1212,26 @@ h1 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 38rem;
+		margin-top: 35rem;
 		width: 30rem;
 	}
 
-	.tarentule{
+	.tarentule {
 		width: 30rem;
 	}
-	
-  #formulaire{
-    margin-top: 5rem;
-  }
-  
-  .inpuText{
-    width: 30rem;
-  }
-  .aeraText{
-    width: 30rem;
-  }
-	
-	#script_solaire{
+	/*-----------------formulaire----------------*/
+	#formulaire {
+		margin-top: 5rem;
+	}
+
+	.inpuText {
+		width: 30rem;
+	}
+	.aeraText {
+		width: 30rem;
+	}
+
+	#script_solaire {
 		display: none;
-		
 	}
-
 }
-
-
-
