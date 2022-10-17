@@ -10,31 +10,31 @@ let precedent = document.querySelector(".precedent");
 let suivant = document.querySelector(".suivant");
 
 function enleverActiveImages() {
-	for (let i = 0; i < nbr__img; i++) {
-		img__slider[i].classList.remove("active");
-	}
+  for (let i = 0; i < nbr__img; i++) {
+    img__slider[i].classList.remove("active");
+  }
 }
 
 suivant.addEventListener("click", function () {
-	etape++;
-	if (etape >= nbr__img) {
-		etape = 0;
-	}
-	enleverActiveImages();
-	img__slider[etape].classList.add("active");
+  etape++;
+  if (etape >= nbr__img) {
+    etape = 0;
+  }
+  enleverActiveImages();
+  img__slider[etape].classList.add("active");
 });
 
 precedent.addEventListener("click", function () {
-	etape--;
-	if (etape < 0) {
-		etape = nbr__img - 1;
-	}
-	enleverActiveImages();
-	img__slider[etape].classList.add("active");
+  etape--;
+  if (etape < 0) {
+    etape = nbr__img - 1;
+  }
+  enleverActiveImages();
+  img__slider[etape].classList.add("active");
 });
 /*------------------fonction formulaire------*/
 const message =
-	"Merci pour votre retour! voici un petit cadeaux en mode display ;)";
+  ", merci pour votre retour! voici un petit cadeaux en mode display ;)";
 
 let systeme_solaire = document.getElementById("systeme_solaire");
 
