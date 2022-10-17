@@ -34,7 +34,7 @@ precedent.addEventListener("click", function () {
 });
 /*------------------fonction formulaire------*/
 const message =
-  ", merci pour votre retour! voici un petit cadeaux en mode display ;)";
+  ", merci pour votre retour! voici un petit cadeaux pour le mode display ;)";
 
 let systeme_solaire = document.getElementById("systeme_solaire");
 
