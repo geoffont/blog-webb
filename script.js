@@ -59,7 +59,10 @@ document
 /*-----------------fonction scroll---------------*/
 window.addEventListener("scroll", function () {
 	const distance = window.scrollY;
+	document.querySelector("#header").style.transform = `translateY(${
+		distance * 0.55
+	}px)`;
 	document.querySelector("body").style.transform = `translateY(${
-		distance * -0.5
+		distance * -0.55
 	}px)`;
 });
