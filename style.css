@@ -25,7 +25,7 @@ img {
 body {
 	background: url(images/espace.jpg);
 	background-position: 100%;
-	height: auto;
+	height: 4000px;
 }
 
 h2 {
@@ -1084,6 +1084,10 @@ h1 {
 		margin: 0;
 		padding: 0;
 	}
+
+  body{
+    height: 6000px;
+  }
 	
 	.article-static {
 		width: 100%;
