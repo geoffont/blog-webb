@@ -51,7 +51,7 @@ document
 		}
 
 		if (window.innerWidth < 600) {
-			$("systeme_solaire").hide(systeme_solaire);
+			("systeme_solaire").hide(systeme_solaire);
 		} else {
 			systeme_solaire.style.display = "block";
 		}
